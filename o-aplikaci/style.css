@@ -1,19 +1,73 @@
-/* Používáme intuitivní výpočet rozměrů prvků. */
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: sans-serif;
+body {
+  font-family: 'Montserrat', sans-serif; /* Používáme moderní font Montserrat */
+  background-color: #f8f9fa; /* Světle šedé pozadí */
+  display: flex;
+  justify-content: center; /* Horizontální centrování */
+  align-items: center; /* Vertikální centrování (pokud chcete celý obsah na střed obrazovky) */
+  min-height: 100vh; /* Zajistí, že body zabere alespoň výšku okna */
+  margin: 0;
+  padding: 20px;
+  text-align: center; /* Zarovnání textu na střed */
 }
 
 .container {
-  max-width: 20rem;
-  margin-right: auto;
-  margin-left: auto;
-  }
-.h1 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  font-family: 'matter', sans-serif !important;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 80%; /* Nastavte požadovanou šířku kontejneru */
+  max-width: 600px; /* Maximální šířka kontejneru */
 }
+
+header nav {
+  display: flex;
+  justify-content: center; /* Centrování odkazů v navigaci */
+  gap: 20px; /* Mezera mezi odkazy */
+  margin-bottom: 20px;
+}
+
+header nav a {
+  color: #007bff; /* Modrá barva odkazů */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #0056b3;
+}
+
+main {
+  display: flex;
+  flex-direction: column; /* Uspořádání prvků pod sebe */
+  align-items: center; /* Centrování prvků na střed */
+}
+
+h1, h2, h3, p {
+  text-align: center; /* Opětovné explicitní zarovnání textu na střed */
+  margin-bottom: 15px; /* Mezera pod nadpisy a odstavci */
+}
+
+h1 {
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #555;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #777;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #333;
+  line-height: 1.6;
+}
+
