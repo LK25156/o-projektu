@@ -12,3 +12,8 @@ html {
   margin-right: auto;
   margin-left: auto;
   }
+.h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-family: 'matter', sans-serif !important;
+}
